@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+*.pt
+*.pth
+*.onnx
+*.mp4
+*.avi
+*.npz
+runs/
+artifacts/
+data/raw/
+data/processed/
+.DS_Store

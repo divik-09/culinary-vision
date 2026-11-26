@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "culinary-vision"
+version = "0.1.0"
+description = "Temporal computer vision pipeline for ingredient and cooking-state understanding"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Divik Aggarwal"}]
+dependencies = [
+  "numpy>=1.24",
+  "opencv-python>=4.8",
+  "PyYAML>=6.0",
+  "torch>=2.1",
+]
+
+[project.optional-dependencies]
+vision = ["ultralytics>=8.2", "onnx>=1.15", "onnxruntime>=1.17"]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+culinary-vision = "culinary_vision.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

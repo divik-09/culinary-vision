@@ -1,0 +1,19 @@
+# Copy to ingredient_dataset.yaml and replace paths with your CVAT/Label Studio YOLO export.
+path: /absolute/path/to/culinary_dataset
+train: images/train
+val: images/val
+
+names:
+  0: onion_diced
+  1: onion_sliced
+  2: tomato_diced
+  3: tomato_puree
+  4: carrot_baton
+  5: carrot_diced
+  6: potato_cube
+  7: potato_wedge
+  8: bell_pepper_sliced
+  9: chicken_strip
+  10: chicken_mince
+  11: pasta
+  12: rice

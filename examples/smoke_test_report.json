@@ -1,0 +1,8 @@
+{
+  "video": "artifacts/demo/synthetic_pan_demo.mp4",
+  "frames_read": 144,
+  "feature_rows": 24,
+  "feature_count": 47,
+  "feature_csv": "artifacts/demo/demo_frame_features.csv",
+  "warning": "Synthetic video validates the image/video pipeline only; it is not real cooking data and must not be used to claim model accuracy."
+}

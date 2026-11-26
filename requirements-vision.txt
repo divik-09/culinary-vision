@@ -1,0 +1,4 @@
+-r requirements.txt
+ultralytics>=8.2
+onnx>=1.15
+onnxruntime>=1.17
